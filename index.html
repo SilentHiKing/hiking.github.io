@@ -39,6 +39,24 @@
             max-width: 200px;
             height: auto;
         }
+        /* 添加新的样式 */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        .image-gallery img {
+            width: 48%;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 600px) {
+            .image-gallery img {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -70,6 +88,16 @@
                 <li>灵活的定制选项</li>
             </ul>
         </section>
+        <!-- 添加新的图片展示部分 -->
+        <section class="section">
+            <h2>公司风采</h2>
+            <div class="image-gallery">
+                <img src="img/1.png" alt="公司办公环境">
+                <img src="img/2.png" alt="团队合影">
+                <img src="img/3.png" alt="产品展示">
+                <img src="img/1.png" alt="客户案例">
+            </div>
+        </section>
         <section class="section">
             <h2>联系我们</h2>
             <p>电话：123-456-7890</p>
@@ -77,7 +105,7 @@
             <p>地址：中国某省某市某区某街道123号</p>
             <div class="qr-code">
                 <h3>扫码添加我们的微信</h3>
-                <img src="path/to/your/qrcode.png" alt="微信二维码">
+                <img src="img/1.png" alt="微信二维码">
                 <p>微信号: your_wechat_id</p>
             </div>
         </section>
